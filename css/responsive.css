@@ -1,0 +1,128 @@
+/* RESPONSIVE ALL SCREEN */
+@media only screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 48px;
+  }
+  .header .header-content {
+    height: 624px;
+    padding-top: 6rem;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .container {
+    padding: 0 24px;
+  }
+  .header-menu {
+    display: none !important;
+  }
+  .header-menuMobile {
+    display: block !important;
+  }
+  .header .header-content {
+    height: 500px;
+  }
+  .header .header-content h1 {
+    font-size: 64px;
+  }
+  .ipad {
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn {
+    padding: 15px;
+    letter-spacing: 1px;
+  }
+  .header .header-content {
+    height: auto;
+    padding: 100px 0 60px 0;
+  }
+  .header .header-content h1 {
+    font-size: 30px;
+  }
+  .header .header-content h2,
+  .ipad .ipad-content p,
+  .shoreline .shoreline-content p {
+    font-size: 14px;
+  }
+  .ipad .ipad-content h1,
+  .shoreline .shoreline-content h1 {
+    font-size: 20px;
+  }
+  .ipad .ipad-content p {
+    margin-bottom: 20px;
+  }
+  .shoreline {
+    padding-top: 50px;
+  }
+  .shoreline .shoreline-wrapper {
+    flex-direction: column;
+  }
+  .shoreline .shoreline-wrapper > * {
+    width: 100%;
+    padding-left: 0;
+  }
+  .shoreline .shoreline-image {
+    margin-bottom: 12px;
+  }
+  .shoreline .shoreline-image::before {
+    position: unset;
+  }
+  .block .block-wrapper {
+    flex-direction: column;
+  }
+  .block .block-wrapper > * {
+    width: 100%;
+  }
+  .block .block-content {
+    padding: 40px 12px;
+  }
+  .block-first {
+    margin-bottom: 40px;
+  }
+  .block-second .block-wrapper {
+    flex-direction: column-reverse;
+  }
+  .signup {
+    margin-top: 60px;
+    padding: 75px 0;
+  }
+  .signup .signup-email h1 {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+  .signup .signup-form {
+    flex-direction: column;
+  }
+  .signup .signup-form > * {
+    width: 100%;
+  }
+  .signup .signup-address {
+    padding: 15px;
+  }
+  .signup .signup-form input {
+    font-size: 12px;
+  }
+  .contact {
+    padding-top: 40px;
+  }
+  .contact .contact-wrapper {
+    flex-direction: column;
+    margin: 0;
+  }
+  .contact .contact-item {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+  .contact .contact-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .contact .contact-social {
+    margin-top: 40px;
+  }
+  .footer {
+    padding: 40px 0;
+  }
+}

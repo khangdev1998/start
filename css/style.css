@@ -1,0 +1,412 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+html {
+  font-family: "Nunito", sans-serif;
+}
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  color: #00000080;
+}
+:root {
+  --primary-color: #64a19d;
+  --light-color: #ffffff;
+}
+
+/* GLOBAL ELEMENT */
+.container {
+  max-width: 1254px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.btn {
+  padding: 20px 33.2px;
+  background-color: #64a19d;
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 12.8px;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  display: inline-block;
+  user-select: none;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-weight: 600;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #558985;
+  border-color: #50817e;
+}
+.gap {
+  height: 48px;
+}
+/* GLOBAL ELEMENT */
+
+.header {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000 100%
+    ),
+    url("../images/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.header .header-wrapper {
+  background-color: var(--light-color);
+}
+.header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0;
+}
+.header .header-logo {
+  color: #000;
+  margin-right: 6px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+}
+.header .header-menu {
+  list-style: none;
+  display: flex;
+}
+.header .header-item {
+  margin-right: 54px;
+  display: inline-flex;
+}
+.header .header-item:last-child {
+  margin-right: 28px;
+}
+.header .header-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+.header .header-link:hover {
+  color: var(--primary-color);
+}
+.header .header-menuMobile {
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
+}
+.header .header-content {
+  padding-top: 14rem;
+  height: 937px;
+  text-align: center;
+}
+.header .header-content h1 {
+  font-family: "Varela", sans-serif;
+  font-size: 100px;
+  letter-spacing: 1rem;
+  background: linear-gradient(rgba(255, 255, 255, 1.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-transform: uppercase;
+}
+.header .header-content h2 {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #ffffff80;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 45px;
+}
+.ipad {
+  padding-top: 160px;
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.ipad .ipad-content {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--light-color);
+}
+.ipad .ipad-content h1 {
+  color: var(--light-color);
+  font-size: 32px;
+  margin-bottom: 24px;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+.ipad .ipad-content p {
+  color: #ffffff80;
+  margin-bottom: 80px;
+  letter-spacing: 0.8px;
+}
+.ipad .ipad-content p a {
+  color: var(--primary-color);
+}
+.ipad .ipad-content p a:hover {
+  color: #50817e;
+}
+.ipad .ipad-image img {
+  max-width: 100%;
+}
+.shoreline {
+  padding-top: 160px;
+}
+.shoreline .shoreline-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shoreline .shoreline-image {
+  position: relative;
+  max-width: 815px;
+  width: 100%;
+}
+.shoreline .shoreline-image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -0.6rem;
+  width: 10px;
+  height: 135px;
+  background-color: var(--primary-color);
+}
+.shoreline .shoreline-image img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.shoreline .shoreline-content {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  padding-left: 32px;
+}
+.shoreline .shoreline-content h1 {
+  font-size: 24px;
+  color: #212529;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.shoreline .shoreline-content p {
+  color: #00000080;
+  letter-spacing: 1px;
+}
+.block .block-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+}
+.block .block-image,
+.block-content {
+  width: 50%;
+}
+.block .block-image img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.block .block-content {
+  padding: 80px 12px;
+  color: var(--light-color);
+  text-align: center;
+  margin: auto;
+  max-width: 500px;
+}
+.block .block-content h4 {
+  font-size: 24px;
+  color: var(--light-color);
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  margin-bottom: 8px;
+}
+.block .block-content p {
+  color: #ffffff80;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.signup {
+  margin-top: 160px;
+  padding: 160px 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 75%,
+      #000 100%
+    ),
+    url("../images/bg-signup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  text-align: center;
+}
+.signup .btn {
+  opacity: 0.6;
+  font-size: 14px;
+  cursor: context-menu;
+}
+.signup .btn:hover {
+  background-color: var(--primary-color);
+}
+.signup .signup-email {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.signup .signup-email i {
+  font-size: 32px !important;
+  color: var(--light-color);
+}
+.signup .signup-email h1 {
+  font-size: 32px;
+  margin-bottom: 45px;
+  color: var(--light-color);
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  margin-top: 4px;
+}
+.signup .signup-form {
+  display: flex;
+  justify-content: space-between;
+  height: 59px;
+  max-width: 775px;
+}
+.signup .signup-address {
+  background-color: var(--light-color);
+  border-radius: 4px;
+  padding: 20px 32px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  flex: 1;
+  margin-right: 24px;
+}
+.signup .signup-form input {
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.signup .signup-form input::placeholder {
+  letter-spacing: 1.4px;
+}
+.bg-footer {
+  background: #000000;
+}
+.contact {
+  padding-top: 80px;
+}
+.contact .contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -24px;
+}
+.contact .contact-item {
+  background-color: var(--light-color);
+  padding: 45px 16px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  position: relative;
+  margin: 0 24px;
+  width: calc(100% / 3);
+  text-align: center;
+}
+.contact .contact-item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--primary-color);
+  width: 100%;
+  height: 4px;
+}
+.contact .contact-item i {
+  color: var(--primary-color);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.contact .contact-item h4 {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 12.8px;
+  letter-spacing: 2px;
+  color: #212529;
+  text-transform: uppercase;
+}
+.contact .contact-item h4:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  background-color: #c7c8c9;
+  width: 50px;
+  height: 1px;
+}
+.contact .contact-item > div,
+.contact-item a {
+  padding-top: 40px;
+  font-size: 15px;
+}
+.contact .contact-item a {
+  display: inline-block;
+  color: var(--primary-color);
+  transition: color 0.2s linear;
+}
+.contact .contact-item a:hover {
+  color: #50817e;
+}
+.contact .contact-social {
+  max-width: 180px;
+  margin-top: 80px;
+  margin: 80px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contact .contact-link {
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+.contact .contact-social .contact-link i {
+  color: #5f5f5f;
+  font-size: 16px;
+}
+.contact .contact-social .contact-link:hover i {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer {
+  color: #ffffff80;
+  padding: 80px 0;
+  text-align: center;
+}
